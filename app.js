@@ -31,9 +31,9 @@ const dataCarsElement = document.querySelector("[data-cars]");
 
 
 function renderCar(){
-    let htmlString = '';
+    let carElement = '';
     cars.forEach(car => {
-        htmlString += `
+        carElement += `
             <div class="card text-white p-0 m-2" style="width: 15rem; background-color: #112D46;" onclick="changeBackground(${contador})" ondblclick="resetSelectedCars(${contador})">
                 <div class="card-body">
                     <h5 class="card-title">${car.name}</h5>
@@ -47,7 +47,7 @@ function renderCar(){
         `;
         contador++;
     });
-    dataCarsElement.innerHTML = htmlString;
+    dataCarsElement.innerHTML = carElement;
 }
 
 

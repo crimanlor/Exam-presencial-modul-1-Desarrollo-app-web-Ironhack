@@ -1,0 +1,13 @@
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+
+p {
+    color:#808080;
+    }
+    
+h5, p, h2 {  
+    text-align: center;
+}
